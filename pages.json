@@ -1,0 +1,76 @@
+{
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#DD524D",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "fontSize": "10px",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "猪栏",
+        "iconPath": "static/tabbar/pig.png",
+        "selectedIconPath": "static/tabbar/pig-selected.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "社区",
+        "iconPath": "static/tabbar/news.png",
+        "selectedIconPath": "static/tabbar/news-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/tabbar/me.png",
+        "selectedIconPath": "static/tabbar/me-selected.png"
+      }
+    ]
+  },
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/login"
+    },
+    {
+      "path": "pages/index/index"
+    },
+    {
+      "path": "pages/news/news"
+    },
+    {
+      "path": "pages/me/me"
+    }, {
+      "path": "pages/pig-register/pig-register",
+      "style": {
+        "navigationBarTitleText": "新猪入栏",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/my-pig/my-pig",
+      "style": {
+        "navigationBarTitleText": "我的小猪",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/pig-detail/pig-detail",
+      "style": {
+        "navigationBarTitleText": "小猪详情",
+        "enablePullDownRefresh": false
+      }
+
+    }, {
+      "path": "pages/pig-analysis/pig-analysis",
+      "style": {
+        "navigationBarTitleText": "猪栏分析",
+        "enablePullDownRefresh": true
+      }
+
+    }
+  ],
+  "globalStyle": {
+    "backgroundColor": "#FF7F50",
+    "navigationBarTextStyle": "#FFFFFF",
+    "navigationBarTitleText": "AI养猪智能管理平台",
+    "navigationBarBackgroundColor": "#FF7F50"
+  }
+}
